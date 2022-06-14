@@ -4,7 +4,7 @@
  * rev_string - reverse string.
  * @s: The string to reverse.
  */
-void revstring(char *s)
+void rev_string(char *s)
 {
 	int len = 0, index = 0;
 	char tmp;
@@ -15,7 +15,7 @@ void revstring(char *s)
 	for (index = len - 1; index >= len / 2; index--)
 	{
 		tmp = s[index];
-		s[index] = s[len - index -1];
+		s[index] = s[len - index - 1];
 		s[len - index - 1] = tmp;
 	}
 }
