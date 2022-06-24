@@ -2,8 +2,8 @@
 
 /**
  * main - Print number 1 to 100 and for multiples of 3 it print Fizz,
- * 	  for multiples of 5 it print Buzz, for both 3 and 5 it print
- * 	  FizzBuzz.
+ * 	for multiples of 5 it print Buzz, for both 3 and 5 it print
+ * 	FizzBuzz.
  * Return: 0 Always.
  */
 int main(void)
@@ -26,8 +26,10 @@ int main(void)
 		}
 		else
 		{
-			printf("%i ",num);
+			printf("%i ", num);
 		}
 	}
 	printf("\n");
+
+	return (0);
 }
