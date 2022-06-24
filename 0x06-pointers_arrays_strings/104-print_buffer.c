@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * print_bffer - Prints a buffer 10 bytes at a time, starting with
+ * print_buffer - Prints a buffer 10 bytes at a time, starting with
  *		 the byte position, and diplaying printable characters.
  * @b: The buffer to be printed.
  * @size: The number of bytes to be printed from the buffer.
@@ -32,7 +32,7 @@ void print_buffer(char *b, int size)
 			if ((index + byte) >= size)
 				break;
 
-			else if (*(b + index + byte) >= 31 && 
+			else if (*(b + index + byte) >= 31 &&
 				 *(b + index + byte) <= 126)
 				printf("%c", *(b + index + byte));
 
