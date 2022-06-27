@@ -22,12 +22,12 @@ char *_strstr(char *haystack, char *neddle)
 		if (haystack[i] == neddle[i])
 		{
 			do {
-				if (neddle[index + 1] == '\0')
+				if (neddle[i + 1] == '\0')
 					return (haystack);
 
 				i++;
 
-			} while (haystack[i] == neddle[index]);
+			} while (haystack[i] == neddle[i]);
 		}
 
 		haystack++;
