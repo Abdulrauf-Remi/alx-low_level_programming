@@ -17,7 +17,7 @@ char *_strstr(char *haystack, char *neddle)
 
 	while (*haystack)
 	{
-		index = 0;
+		i = 0;
 
 		if (haystack[i] == neddle[i])
 		{
