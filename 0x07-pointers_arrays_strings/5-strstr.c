@@ -12,14 +12,26 @@ char *_strstr(char *haystack, char *neddle)
 {
 	int i;
 
+	if (*neddle == 0)
+		return (haystack);
+
 	while (*haystack)
 	{
-		for (i = 0; neddle[i]; i++)
+		index = 0;
+
+		if (haystack[i] == neddle[i])
 		{
-			if (haystack[i] == neddle[i])
-				return (haystack[i]);
+			do {
+				if (neddle[index + 1] == '\0')
+					return (haystack);
+
+				i++;
+
+			} while (haystack[i] == neddle[index]);
 		}
+
+		haystack++;
 	}
 
-	return ('\n');
+	return ('\0');
 }
