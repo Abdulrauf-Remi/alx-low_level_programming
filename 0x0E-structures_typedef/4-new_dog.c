@@ -29,7 +29,7 @@ int _strlen(char *str)
  *
  * Return: The poiter to the dest.
  */
-char *strcopy(char *dest, char *src)
+char *_strcopy(char *dest, char *src)
 {
 	int index = 0;
 
