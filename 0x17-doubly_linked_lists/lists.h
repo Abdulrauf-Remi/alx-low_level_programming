@@ -23,4 +23,5 @@ typedef struct dlistint_s
 /* fuctions */
 
 size_t print_dlistint(const dlistint *h);
+size_t dlistint_len(const dlistint_t *h);
 #endif
